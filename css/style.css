@@ -1,0 +1,106 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: white;
+    font-size: 1.8em;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Styling */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Fieldset */
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Legend */
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #e63946;
+}
+
+/* Labels */
+label {
+    font-size: 0.9em;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+/* Input Focus Effect */
+input:focus {
+    border-color: #e63946;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(230, 57, 70, 0.5);
+}
+
+/* Button */
+button {
+    background: #e63946;
+    color: white;
+    padding: 12px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #d62839;
+    box-shadow: 0px 4px 8px rgba(230, 57, 70, 0.4);
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: white;
+}
