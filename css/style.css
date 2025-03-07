@@ -1,6 +1,4 @@
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=League+Spartan:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sigmar&display=swap');
-</style>
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=League+Spartan:wght@100..900&family=Roboto:ital,wght@0,100..900&family=Sigmar&display=swap');
 
 * {
     margin: 0;
@@ -54,14 +52,6 @@ fieldset {
     border: none;
     display: flex;
     flex-direction: column;
-}
-
-/* Legend */
-legend {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #e63946;
 }
 
 /* Labels */
