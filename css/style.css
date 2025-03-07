@@ -5,6 +5,10 @@
     --secondary-color: #d62839;
     --background-gradient: linear-gradient(135deg, #ff9a9e, #fad0c4);
     --placeholder-color: #aaa;
+    --form-background: #f8f8f8; /* Light background for the form */
+    --benefits-background: rgba(255, 255, 255, 0.9); /* Slightly transparent white for benefits */
+    --text-color: #333; /* Dark text color for readability */
+    --heading-color: #444; /* Slightly lighter text for headings */
 }
 
 /* Global Styles */
@@ -36,6 +40,7 @@ header {
 
 header h1 {
     font-size: 2em;
+    color: var(--heading-color); /* Using a heading color */
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -48,10 +53,14 @@ header p {
 /* Show Benefits Section and Form by default */
 .benefits,
 form {
-    display: block;         /* Ensure elements are visible */
-    opacity: 1;             /* Fully visible */
+    display: block;
+    opacity: 1;
     transform: translateY(0);
-    transition: none;       /* Disable transition if not needed */
+    transition: none;
+    background: var(--benefits-background);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Button Styling */
@@ -75,10 +84,10 @@ form button[type='submit']:hover {
 
 /* Form Styling */
 form {
-    background: white;
+    background: var(--form-background); /* Light background for form */
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     max-width: 400px;
     width: 100%;
 }
@@ -95,7 +104,7 @@ label {
     font-size: 0.9em;
     margin-top: 10px;
     font-weight: bold;
-    color: #333;
+    color: var(--text-color); /* Dark color for labels */
 }
 
 /* Input Fields */
@@ -111,7 +120,7 @@ input {
 
 input::placeholder {
     color: var(--placeholder-color);
-    opacity: 1; /* Firefox lowers the opacity by default */
+    opacity: 1;
 }
 
 /* Input Focus Effect */
@@ -132,8 +141,8 @@ button:focus,
 footer {
     margin-top: 20px;
     font-size: 0.8em;
-    color: rgba(255, 255, 255, 0.7); /* Slightly lighter white for better contrast */
-    text-align: center; /* Center the footer text */
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
 }
 
 footer a {
@@ -143,7 +152,7 @@ footer a {
 }
 
 footer a:hover {
-    color: white; /* Change color on hover */
+    color: white;
 }
 
 /* Responsive Design */
