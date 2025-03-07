@@ -247,4 +247,38 @@ footer a:hover {
 
     .benefits,
     form {
-        width: 80%; /* Ensure
+        width: 100%; 
+    }
+
+    .opt-in-btn,
+    form button[type='submit'],
+    .submit {
+        max-width: 350px; /* Slightly wider buttons on tablets */
+    }
+}
+
+/* Media Query for Desktops (min-width: 1024px) */
+@media (min-width: 1024px) {
+    body {
+        padding: 60px; /* More padding on larger screens */
+    }
+
+    header h1 {
+        font-size: 3em; /* Larger header on desktops */
+    }
+
+    header h2 {
+        font-size: 2.5em; /* Larger subheading on desktops */
+    }
+
+    .benefits,
+    form {
+        width: 100%;
+    }
+
+    .opt-in-btn,
+    form button[type='submit'],
+    .submit {
+        max-width: 400px; /* Wider buttons on larger screens */
+    }
+}
