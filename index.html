@@ -4,12 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monthly Rose Subscription | BloomBox</title>
+    <title>Monthly Rose Subscriptions</title>
     <link rel="stylesheet" href="css/meyersreset-and-normalize-form.css">
     <link rel="stylesheet" href="css/style.css">
-		<script src="script.js" async></script> <!-- Asynchronous loading of JavaScript -->
-    <script src="js/script.js" async></script>
-		<script src="js/script.js" defer></script>
+    <script src="js/script.js" defer></script> <!-- Deferred loading of JavaScript -->
 </head>
 
 <body>
@@ -63,7 +61,7 @@
                     <label for="address">Shipping Address</label>
                     <input type="text" id="address" name="address" required
                         placeholder="Example: 123 Main St, City, State 12345" pattern="^\d+\s[A-Za-z0-9\s.,#-]+,\s[A-Za-z\s]+,\s[A-Za-z]{2}\s\d{5}$"
-                        autocomplete="street-address" aria-describedby="address-hint">
+                        autocomplete="address-line1" aria-describedby="address-hint">
                     <p id="address-hint" class="hint">Please include street address, city, state, and ZIP code</p>
                 </div>
             </fieldset>
