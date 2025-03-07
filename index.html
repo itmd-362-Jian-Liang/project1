@@ -6,6 +6,7 @@
     <title>Monthly Rose Subscription | BloomBox</title>
     <link rel="stylesheet" href="css/meyersreset-and-normalize-form.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" async></script>
 </head>
 <body>
     <header>
@@ -15,7 +16,7 @@
     </header>
 
     <main>
-        <section class="benefits" aria-label="Subscription benefits">
+        <section class="benefits" aria-label="Subscription benefits" style="display: none;">
             <h2>What You Get</h2>
             <ul>
                 <li>Fresh, hand-picked roses delivered monthly</li>
@@ -27,7 +28,7 @@
 
         <button class="opt-in-btn" type="button">Opt In &amp; Learn More</button>
 
-        <form action="submit-form.php" method="POST" autocomplete="on">
+        <form action="submit-form.php" method="POST" autocomplete="on" style="display: none;">
             <fieldset>
                 <legend>Sign Up for Your Monthly Roses</legend>
                 
@@ -63,7 +64,7 @@
                 </div>
             </fieldset>
 
-            <button type="submit">Get My Monthly Roses</button>
+            <button class="submit" type="submit">Get My Monthly Roses</button>
         </form>
     </main>
 
@@ -74,7 +75,5 @@
             <a href="/terms">Terms of Service</a>
         </nav>
     </footer>
-
-    <script src="js/script.js" async></script>
 </body>
 </html>
