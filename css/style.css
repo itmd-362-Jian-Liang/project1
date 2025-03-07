@@ -44,6 +44,16 @@ header h1 {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
+header h2 {
+    font-size: 2em;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for better readability */
+    margin-top: 0;  /* Ensure there is no unwanted space above */
+    margin-bottom: 10px; /* Optional space at the bottom for consistency */
+    font-weight: 600; /* Optional: add a little more weight to the text */
+}
+
+
 header p {
     font-size: 1em;
     line-height: 1.6;
@@ -110,6 +120,30 @@ form {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     max-width: 400px;
     width: 100%;
+    display: flex; /* Make the form a flex container */
+    flex-direction: column; /* Arrange form elements in a column */
+    align-items: center; /* Center elements horizontally */
+    justify-content: center; /* Center elements vertically */
+}
+
+/* Submit Button Styling */
+.submit {
+    background: var(--primary-color);
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    margin-top: 20px; /* Space between button and form fields */
+    width: 100%; /* Make the button take up the full width of the form */
+    max-width: 300px; /* Limit the maximum width */
+}
+
+.submit:hover {
+    background: var(--secondary-color);
+    transform: scale(1.05);
 }
 
 /* Fieldset */
