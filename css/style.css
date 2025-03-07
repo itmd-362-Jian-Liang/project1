@@ -53,7 +53,6 @@ header h2 {
     font-weight: 600; /* Optional: add a little more weight to the text */
 }
 
-
 header p {
     font-size: 1em;
     line-height: 1.6;
@@ -95,19 +94,33 @@ form {
 
 /* Button Styling */
 .opt-in-btn,
-form button[type='submit'] {
+form button[type='submit'],
+.submit {
     background: var(--primary-color);
     color: white;
-    padding: 12px;
-    font-size: 1em;
+    padding: 12px 20px;
+    font-size: 1.1em;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s, transform 0.2s;
+    width: 100%; /* Make the button span the full width of the form */
+    max-width: 300px; /* Limit the maximum width to make it consistent */
+    display: flex; /* Ensure it's in a flex container */
+    justify-content: center; /* Center the button text */
+    align-items: center; /* Center the text vertically inside the button */
+    margin-top: 20px; /* Space between button and form fields */
 }
 
+/* Submit Button Positioning */
+.submit {
+    margin-left: auto; /* Push the submit button to the right */
+}
+
+/* Button Hover Styling */
 .opt-in-btn:hover,
-form button[type='submit']:hover {
+form button[type='submit']:hover,
+.submit:hover {
     background: var(--secondary-color);
     transform: scale(1.05);
 }
@@ -124,26 +137,6 @@ form {
     flex-direction: column; /* Arrange form elements in a column */
     align-items: center; /* Center elements horizontally */
     justify-content: center; /* Center elements vertically */
-}
-
-/* Submit Button Styling */
-.submit {
-    background: var(--primary-color);
-    color: white;
-    padding: 12px 20px;
-    font-size: 1.1em;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s, transform 0.2s;
-    margin-top: 20px; /* Space between button and form fields */
-    width: 100%; /* Make the button take up the full width of the form */
-    max-width: 300px; /* Limit the maximum width */
-}
-
-.submit:hover {
-    background: var(--secondary-color);
-    transform: scale(1.05);
 }
 
 /* Fieldset */
@@ -210,62 +203,4 @@ footer a:hover {
 }
 
 /* Responsive Design */
-@media (max-width: 480px) {
-    body {
-        padding: 10px;
-    }
-    header h1 {
-        font-size: 1.8em;
-    }
-    header p {
-        font-size: 0.9em;
-    }
-}
-
-/* Tablets (768px and up) */
-@media (min-width: 768px) {
-    body {
-        padding: 40px;
-    }
-
-    header {
-        max-width: 700px;
-    }
-
-    .benefits,
-    form {
-        max-width: 500px;
-    }
-
-    header h1 {
-        font-size: 2.5em;
-    }
-
-    header p {
-        font-size: 1.2em;
-    }
-}
-
-/* Desktops (1024px and up) */
-@media (min-width: 1024px) {
-    body {
-        padding: 50px;
-    }
-
-    header {
-        max-width: 800px;
-    }
-
-    .benefits,
-    form {
-        max-width: 600px;
-    }
-
-    header h1 {
-        font-size: 3em;
-    }
-
-    header p {
-        font-size: 1.4em;
-    }
-}
+@med
