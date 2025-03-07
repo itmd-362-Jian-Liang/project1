@@ -184,4 +184,25 @@ footer a:hover {
 }
 
 /* Desktops (1024px and up) */
-@media 
+@media (min-width: 1024px) {
+    body {
+        padding: 50px;
+    }
+
+    header {
+        max-width: 800px;
+    }
+
+    .benefits,
+    form {
+        max-width: 600px;
+    }
+
+    header h1 {
+        font-size: 3em;
+    }
+
+    header p {
+        font-size: 1.4em;
+    }
+}
